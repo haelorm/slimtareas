@@ -9,8 +9,12 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Tareas 📝</h1>
+    <div class="container roundBorder">
+        <form action="" onsubmit="addNewTask(event)">
+            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva Tarea" class="roundBorder">
+            <button type="submit" class="addTaskButton">Agregar</button>
+        </form>
+        <div id="tasksContainer"></div>
     </div>
     <script src="./js/script.js"></script>
 </body>

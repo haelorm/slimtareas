@@ -1,8 +1,37 @@
+:root {
+    --fist-color: #a5c882;
+    --second-color: #d33f49;
+    --third-color: #e7e7e7;
+    --white-color: #fff;
+    --black-color: #000;
 
-h1{
-    margin-top: 20%;
 }
-.container{
-    display: flex;
-    justify-content: center;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    background-color: var(--third-color);
+}
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+.container {
+    background-color: var(--white-color);
+    margin: 25px auto;
+    padding: 25px;
+    width: 100%;
+    max-width: 320px;
+}
+
+form {
+    margin: 20px 0;
+
 }
