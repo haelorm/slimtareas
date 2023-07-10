@@ -13,10 +13,41 @@
     box-sizing: border-box;
 }
 
+*::first-letter{
+    text-transform: capitalize;
+}
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto Slab', serif;
     height: 100vh;
     background-color: var(--third-color);
+}
+
+h1{
+    margin: 0;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input{
+    background-color: var(--third-color);
+    border: none;
+    padding: 7px;
+    /* padding-left: 10px; */
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    background-color: var(--second-color);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    padding: 7px;
 }
 
 .roundBorder {
@@ -31,7 +62,16 @@ body {
     max-width: 320px;
 }
 
-form {
-    margin: 20px 0;
+.task {
+    background-color: var(--fist-color);
+    color: var(--white-color);
+    padding: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
 
+.done{
+    background-color: var(--third-color);
+    text-decoration: line-through;
+    color: var(--black-color);
 }

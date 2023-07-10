@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/lista.ico">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Tareas</title>
+    <title>Lista</title>
 </head>
 
 <body>
     <div class="container roundBorder">
+        <h1>Lista</h1>
         <form action="" onsubmit="addNewTask(event)">
-            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva Tarea" class="roundBorder">
-            <button type="submit" class="addTaskButton">Agregar</button>
+            <input type="text" name="taskText" autocomplete="off" placeholder="Escribe aquí" class="roundBorder">
+            <button type="submit" class="addTaskButton roundBorder">Agregar</button>
         </form>
         <div id="tasksContainer"></div>
     </div>
