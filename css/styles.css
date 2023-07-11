@@ -4,7 +4,6 @@
     --third-color: #e7e7e7;
     --white-color: #fff;
     --black-color: #000;
-
 }
 
 *,
@@ -13,7 +12,7 @@
     box-sizing: border-box;
 }
 
-*::first-letter{
+*::first-letter {
     text-transform: capitalize;
 }
 
@@ -23,31 +22,43 @@ body {
     background-color: var(--third-color);
 }
 
-h1{
+h1 {
     margin: 0;
 }
 
 form {
     margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    column-gap: 5px;
+
 }
 
-input{
+
+input {
     background-color: var(--third-color);
     border: none;
     padding: 7px;
-    /* padding-left: 10px; */
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
-button{
-    background-color: var(--second-color);
+button {
     color: var(--white-color);
     border: none;
     cursor: pointer;
     padding: 7px;
+}
+
+.addTaskButton {
+    background-color: var(--second-color);
+}
+
+.orderButton {
+    background-color: var(--fist-color);
 }
 
 .roundBorder {
@@ -59,7 +70,7 @@ button{
     margin: 25px auto;
     padding: 25px;
     width: 100%;
-    max-width: 320px;
+    max-width: 350px;
 }
 
 .task {
@@ -70,7 +81,7 @@ button{
     cursor: pointer;
 }
 
-.done{
+.done {
     background-color: var(--third-color);
     text-decoration: line-through;
     color: var(--black-color);

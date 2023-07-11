@@ -17,7 +17,8 @@
         <h1>Lista</h1>
         <form action="" onsubmit="addNewTask(event)">
             <input type="text" name="taskText" autocomplete="off" placeholder="Escribe aquí" class="roundBorder">
-            <button type="submit" class="addTaskButton roundBorder">Agregar</button>
+            <button type="submit" class="addTaskButton roundBorder">+</button>
+            <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
         </form>
         <div id="tasksContainer"></div>
     </div>
